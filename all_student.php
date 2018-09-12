@@ -2,7 +2,7 @@
 	<thead>
 		<tr>
 			<th>Student Name</th>
-			<th>Matric</th>
+			<th>Student Number</th>
 			<th>Level</th>
 			<th>Department</th>
       <th>Date Added</th>

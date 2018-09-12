@@ -41,7 +41,7 @@
     	<table class="table table-bordered table-hover project_table">
 	<thead>
 		<tr>
-			<th>S/N</th>
+			<th>No</th>
 			<th>Username</th>
 			<th>Password</th>
 		</tr>

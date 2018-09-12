@@ -31,12 +31,7 @@
 			</div>
 
 			<div class="form-group">
-				<div class="well well-sm">
-					<h5>Please wait while the system generate project topic for this student....</h5>
-					<p id="project_title"><img src="image/ajax-loader.gif"> </p>
-					<input type="hidden" name="project_id" value="" id="project_id">
-					<button class="btn btn-xs btn-primary" title="refresh"><i class="fa fa-refresh"></i></button>
-				</div>
+				
 			</div>
 
 			<button type="submit" class="btn btn-sm btn-default">Submit</button>

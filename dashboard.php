@@ -2,9 +2,9 @@
 <?php include 'head.php'; ?>
 <body>
 <?php include 'dashboard_navbar.php'; ?>
-<h3>Recent Project Allocations</h3>
+<h3>Recent Additions</h3>
 <div class="table-responsive">
-	<table class="table table-bordered table-striped table-hover project_table">
+	<!--<table class="table table-bordered table-striped table-hover project_table">
 		<thead>
 			<tr>
 				<th>ID</th>
@@ -15,7 +15,7 @@
 				<th>Department</th>
 				<th>Matric. NO</th>
 			</tr>
-		</thead>
+		</thead>-->
 		<tbody>
 			<?php
              $query = $db->query("SELECT * FROM student");

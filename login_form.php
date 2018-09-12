@@ -32,13 +32,13 @@ $("#login_form1").submit(function(e){
 			if(html=='true')
 			{
 
-				$.jGrowl("Loading Project Files Please Wait......", { sticky: true });
-				$.jGrowl("Welcome to Student's Project Management System", { header: 'Access Granted' });
-				var delay = 5000;
+				//$.jGrowl("Loading Project Files Please Wait......", { sticky: true });
+				//$.jGrowl("Welcome to Student's Project Management System", { header: 'Access Granted' });
+				var delay = 50;
 					setTimeout(function(){ window.location = 'dashboard.php'  }, delay);  
 			}else
 			{
-			    $.jGrowl("Please Check your username and Password", { header: 'Login Failed' });
+			    //$.jGrowl("Please Check your username and Password", { header: 'Login Failed' });
 			}
 			}
 		});
