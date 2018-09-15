@@ -4,12 +4,12 @@
 if(isset($_GET['id']) AND !empty($_GET['id'])){
     $id = $_GET['id'];
 
-    $query = $db->query("SELECT * FROM project WHERE id = '$id' ");
+    $query = $db->query("SELECT * FROM tutors WHERE id = '$id' ");
     $row = $query->fetchAll(PDO::FETCH_OBJ);
     foreach($row as $r){
-      $project_name = $r->project_name;
-      $project_case = $r->project_case;
-      $project_level = $r->project_level;
+      $name = $r->name;
+      $department = $r->department;
+      $id = $r->id;
     }
 }else{
 	header('location: create-project.php');
@@ -18,6 +18,6 @@ if(isset($_GET['id']) AND !empty($_GET['id'])){
 
 <body>
 <?php include 'dashboard_navbar.php'; ?>
-<h3>Edit Unit(s)</h3>
-<?php include 'edit-form.php'; ?>
+<h3>Edit Tutors' Details</h3>
+<?php include 'edit_ttr_form.php'; ?>
 <?php include 'footer.php'; ?>
