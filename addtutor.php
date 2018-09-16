@@ -6,12 +6,4 @@
  $std_class = $_POST['ttr_class'];
  $date = date('Y-m-d');
 
- $query = $db->query("INSERT INTO tutors(name,department,date,)VALUES('$ttr_name','$ttr_dept','$ttr_no','$date')");
-
-//  if($query){
-//  	$update = $db->query("UPDATE project SET allocation = 1 WHERE id = '$project_id' ");
-//  	echo 'true';
-
-//  }else{
-//  	echo 'false';
-//  }
+ $query = $db->query("INSERT INTO tutors(name,department,matric,date)VALUES('$ttr_name','$ttr_dept','$ttr_no','$date')");

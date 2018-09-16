@@ -2,26 +2,20 @@
 	<div class="col-md-4">
 		<form method="post" action="" id="login_form1">
 			<div class="form-group">
-				<label class="control-label">Project Name</label>
+				<label class="control-label">Unit name</label>
 				<input type="text" name="project_name" class="form-control input-sm" required>
 			</div>
-
 			<div class="form-group">
-				<label class="control-label">Project Case Study</label>
-				<input type="text" name="project_case" class="form-control input-sm" required>
-			</div>
-
-			<div class="form-group">
-				<label class="control-label">Poject Level</label>
+				<label class="control-label">Unit Level</label>
 				<select name="project_level" class="form-control input-sm " required>
-				  <option>Simple class mini-project</option>
-				  <option>End of semester project</option>
-				  <option>IS project (2nd Year)</option>
-				  <option>Complex final project (4th Year)</option>
+				  <option>Year 1</option>
+				  <option>Year 2</option>
+				  <option>Year 3</option>
+				  <option>Year 4</option>
 				</select>
 			</div>
 
-			<button type="submit" class="btn btn-sm btn-default">Submit</button>
+			<button type="submit" class="btn btn-sm btn-success">Submit</button>
 		</form>
 	</div>
 
@@ -42,13 +36,13 @@ $("#login_form1").submit(function(e){
 			if(html=='true')
 			{
 
-				$.jGrowl("Adding Project Details Please Wait......", { sticky: true });
+				$.jGrowl("Adding Unit Details Please Wait......", { sticky: true });
 				$.jGrowl("Successfully added", { header: 'Success !!' });
-				var delay = 5000;
+				var delay = 1000;
 					setTimeout(function(){ window.location = 'create-project.php'  }, delay);  
 			}else
 			{
-			    $.jGrowl("Error creating project", { header: 'Project creation failed' });
+			    $.jGrowl("Error creating Unit", { header: 'Unit creation failed' });
 			}
 			}
 		});

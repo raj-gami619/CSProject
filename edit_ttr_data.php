@@ -9,6 +9,7 @@ if(isset($_GET['id']) AND !empty($_GET['id'])){
     foreach($row as $r){
       $name = $r->name;
       $department = $r->department;
+      $matric = $r->matric;
       $id = $r->id;
     }
 }else{

@@ -3,19 +3,17 @@
 		<form method="post" action="" id="login_form1">
 			<div class="form-group">
 				<label class="control-label">Tutors' Name</label>
-				<input type="text" name="ttr_name" class="form-control input-sm" required>
+				<input type="text" name="ttr_name" value="<?php echo $name ?>" class="form-control input-sm" required>
 			</div>
 			<div class="form-group">
 				<label class="control-label">Tutors' Reg. No</label>
-				<input type="text" name="ttr_no" class="form-control input-sm" required>
+				<input type="text" name="ttr_no" value="<?php echo $matric; ?>" class="form-control input-sm" required>
 			</div>
 			<div class="form-group">
 				<label class="control-label">Department</label>
-				<input type="text" name="ttr_dept" class="form-control input-sm" required>
+				<input type="text" name="ttr_dept" value="<?php echo $department; ?>" class="form-control input-sm" required>
 			</div>
-			<div class="form-group">
-				
-			</div>
+            <input type="hidden" name="ttr_id" value="<?php echo $id; ?>">
 			<button type="submit" class="btn btn-sm btn-success">Submit</button>
 		</form>
 	</div>
@@ -31,19 +29,19 @@ $("#login_form1").submit(function(e){
 		var formData = $(this).serialize();
 		$.ajax({
 			type: "POST",
-			url: "addtutor.php",
+			url: "updatetutor.php",
 			data: formData,
 			success: function(html){
 			if(html=='true')
 			{
 
-				$.jGrowl("Please Wait...", { sticky: true });
-				$.jGrowl("Tutor details successfully added", { header: 'Success !!' });
+				$.jGrowl("Please Wait......", { sticky: true });
+				$.jGrowl("Tutor detail(s) successfully updated", { header: 'Success !!' });
 				var delay = 1000;
-					setTimeout(function(){ window.location = 'dashboard.php'  }, delay);  
+					setTimeout(function(){ window.location = 'create-student.php'  }, delay);  
 			}else
 			{
-			    $.jGrowl("Error creating tutors' detail(s)!", { header: ' Creation failed' });
+			    $.jGrowl("Error updating tutors' detail(s)!", { header: 'Creation failed' });
 			}
 			}
 		});

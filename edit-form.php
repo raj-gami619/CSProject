@@ -5,22 +5,18 @@
 				<label class="control-label">Unit Name</label>
 				<input type="text" name="project_name" value="<?php echo $project_name; ?>" class="form-control input-sm" required>
 			</div>
-
-			<div class="form-group">
-				<label class="control-label">Study</label>
-				<input type="text" name="project_case" value="<?php echo $project_case ?>" class="form-control input-sm" required>
-			</div>
-
 			<div class="form-group">
 				<label class="control-label">Level</label>
 				<select name="project_level" class="form-control input-sm " required>
 				  <option value="<?php echo $project_level; ?>" selected><?php echo $project_level; ?></option>
-				  <option value="ND">ND</option>
-				  <option value="HND">HND</option>
+				  <option value="Year 1">Year 1</option>
+				  <option value="Year 2">Year 2</option>
+				  <option value="Year 3">Year 3</option>
+				  <option value="Year 4">Year 4</option>
 				</select>
 			</div>
             <input type="hidden" name="project_id" value="<?php echo $_GET['id']; ?>">
-			<button type="submit" class="btn btn-sm btn-default">Submit</button>
+			<button type="submit" class="btn btn-sm btn-success">Submit</button>
 		</form>
 	</div>
 
