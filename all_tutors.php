@@ -21,7 +21,7 @@
              <tr>
              	<td><?php echo $name; ?></td>
 							 <td><?php echo $matric; ?></td>
-              <td><?php echo $department ?></td>
+              <td><?php echo $department; ?></td>
               <td><?php echo $date; ?></td>
              	<td>
              	    <a class="btn btn-xs btn-primary" href="edit_ttr_data.php?id=<?php echo $row->id; ?>"><i class="fa fa-edit"></i></a>

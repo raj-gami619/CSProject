@@ -10,7 +10,7 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="dashboard.php"><i class="fa fa-home"></i>  Dashboard</a></li> 
+        <li class="active"><a href="dashboard.php"><i class="fa fa-home"></i>  Dashboard</a></li>
         <li><a href="create-project.php"><i class="fa fa-book"></i>  Unit</a></li>
         <li><a href="create-tutor.php"><i class="fa fa-graduation-cap"></i> Tutor</a></li> 
         <li><a href="create-student.php"><i class="fa fa-users"></i>  Student</a></li> 

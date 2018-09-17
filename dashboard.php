@@ -18,17 +18,14 @@
 		</thead>-->
 		<tbody>
 			<?php
-             $query = $db->query("SELECT * FROM student");
+             $query = $db->query("SELECT * FROM tutors");
              $rows = $query->fetchAll(PDO::FETCH_OBJ);
              foreach($rows as $row){
-               $name = $row->name;
-               $matric = $row->matric;
-               $level = $row->level;
                $department = $row->department;
                $project_id = $row->project_id;
                $date = $row->date;
                $id = $row->id;
-               $run = $db->query("SELECT project_name,project_case FROM project WHERE id = '$project_id'");
+               $run = $db->query("SELECT project_name, FROM project WHERE id = '$project_id'");
                $run_rows = $run->fetchAll(PDO::FETCH_OBJ);
                foreach($run_rows as $runrow){
                   $case = $runrow->project_case;
