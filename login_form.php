@@ -3,12 +3,12 @@
 	<form method="post" autocomplete="off" action="" id="login_form1">
 		<div class="form-group">
 			<label class="control-label">Username:</label>
-			<input type="text" name="username" class="form-control" required>
+			<input type="text" name="username" class="form-control" autocomplete="off" required>
 		</div>
 
 		<div class="form-group">
 			<label class="control-label">Password:</label>
-			<input type="password" name="password" class="form-control" required>
+			<input type="password" name="password" class="form-control" autocomplete="off" required>
 		</div>
 
 		<button type="submit" class="btn btn-sm btn-primary">Log in</button>
@@ -32,9 +32,9 @@ $("#login_form1").submit(function(e){
 			if(html=='true')
 			{
 
-				$.jGrowl("Loading Project Files Please Wait......", { sticky: true });
-				$.jGrowl("Welcome to Student's Project Management System", { header: 'Access Granted' });
-				var delay = 5000;
+				$.jGrowl("Loading Files Please Wait...", { sticky: true });
+				$.jGrowl("Welcome Administrator", { header: 'Access Granted' });
+				var delay = 1000;
 					setTimeout(function(){ window.location = 'dashboard.php'  }, delay);  
 			}else
 			{

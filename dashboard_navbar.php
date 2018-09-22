@@ -10,8 +10,9 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <!--<li class="active"><a href="dashboard.php"><i class="fa fa-home"></i>  Dashboard</a></li> -->
-        <!--<li><a href="create-project.php"><i class="fa fa-book"></i>  Project</a></li> -->
+        <li class="active"><a href="dashboard.php"><i class="fa fa-home"></i>  Dashboard</a></li>
+        <li><a href="create-project.php"><i class="fa fa-book"></i>  Unit</a></li>
+        <li><a href="create-tutor.php"><i class="fa fa-graduation-cap"></i> Tutor</a></li> 
         <li><a href="create-student.php"><i class="fa fa-users"></i>  Student</a></li> 
          <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-cog"></i> Manage<span class="caret"></span></a>
@@ -21,7 +22,7 @@
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="logout.php"><span class="fa fa-user"></span> Logout[<?php echo $_SESSION['user']; ?>]</a></li>
+        <li><a href="logout.php"><span class="fa fa-user-circle"></span> Logout[<?php echo $_SESSION['user']; ?>]</a></li>
       </ul>
     </div>
   </div>
