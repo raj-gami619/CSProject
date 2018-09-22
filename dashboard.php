@@ -4,41 +4,37 @@
 <?php include 'dashboard_navbar.php'; ?>
 <h3>Recent Additions</h3>
 <div class="table-responsive">
-	<!--<table class="table table-bordered table-striped table-hover project_table">
+	<table class="table table-bordered table-striped table-hover project_table">
 		<thead>
 			<tr>
-				<th>ID</th>
-				<th>Student Name</th>
-				<th>Project Title</th>
-				<th>Case Study</th>
-				<th>Level</th>
-				<th>Department</th>
-				<th>Matric. NO</th>
+				<th>Unit Name</th>
+				<th>Unit Code</th>
+				<th>Faculty</th>
+				<th>Unit_Level</th>
 			</tr>
-		</thead>-->
+		</thead>
 		<tbody>
 			<?php
-             $query = $db->query("SELECT * FROM tutors");
+             $query = $db->query("SELECT * FROM project");
              $rows = $query->fetchAll(PDO::FETCH_OBJ);
              foreach($rows as $row){
-               $department = $row->department;
-               $project_id = $row->project_id;
-               $date = $row->date;
+               $project_name = $row->name;
+               $unit_code = $row->unit_code;
+			   $faculty = $row->faculty;
+			   $project_level = $row->project_level;
                $id = $row->id;
-               $run = $db->query("SELECT project_name, FROM project WHERE id = '$project_id'");
+               $run = $db->query("SELECT project_name, FROM project WHERE unit_code = '$unit_code'");
                $run_rows = $run->fetchAll(PDO::FETCH_OBJ);
                foreach($run_rows as $runrow){
-                  $case = $runrow->project_case;
+                //   $case = $runrow->project_case;
                   $title = $runrow->project_name;
                ?>
                <tr>
-               	<td><?php echo $id; ?></td>
+               	<td><?php echo $unit_code; ?></td>
                	<td><?php echo $name; ?></td>
                	<td class="text-bold"><?php echo $title; ?></td>
-               	<td class="text-bold"><?php echo $case; ?></td>
-               	<td><?php echo $level; ?></td>
-               	<td><?php echo $department; ?></td>
-               	<td><?php echo $matric; ?></td>
+               	<td><?php echo $project_level; ?></td>
+               	<td><?php echo $faculty; ?></td>
                </tr>
                <?php
                }

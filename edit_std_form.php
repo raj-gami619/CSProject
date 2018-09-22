@@ -3,19 +3,20 @@
 		<form method="post" action="" id="login_form1">
 			<div class="form-group">
 				<label class="control-label">Student Name</label>
-				<input type="text" name="std_name" value="<?php echo $name ?>" class="form-control input-sm" required>
+				<input type="text" name="std_name" value="<?php echo $name ?>" class="form-control input-sm" autocomplete="off" required>
 			</div>
-
 			<div class="form-group">
 				<label class="control-label">Student Reg. No</label>
-				<input type="text" name="std_no" value="<?php echo $matric; ?>" class="form-control input-sm" required>
+				<input type="text" name="std_no" value="<?php echo $matric; ?>" class="form-control input-sm" autocomplete="off" required>
 			</div>
-
 			<div class="form-group">
 				<label class="control-label">Department</label>
-				<input type="text" name="std_dept" value="<?php echo $department; ?>" class="form-control input-sm" required>
+				<input type="text" name="std_dept" value="<?php echo $department; ?>" class="form-control input-sm" autocomplete="off" required>
 			</div>
-
+			<div class="form-group">
+				<label class="control-label">Email</label>
+				<input type="email" name="email" value="<?php echo $email; ?>" class="form-control input-sm" autocomplete="off" required>
+			</div>
 			<div class="form-group">
 				<label class="control-label">Class</label>
 				<select name="std_class" class="form-control input-sm " required>

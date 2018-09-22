@@ -2,16 +2,24 @@
 	<div class="col-md-4">
 		<form method="post" action="" id="login_form1">
 			<div class="form-group">
-				<label class="control-label">Tutors' Name</label>
+				<label class="control-label">Name</label>
 				<input type="text" name="ttr_name" class="form-control input-sm" autocomplete="off" required>
 			</div>
 			<div class="form-group">
-				<label class="control-label">Tutors' Reg. No</label>
+				<label class="control-label">Number</label>
 				<input type="text" name="ttr_no" class="form-control input-sm" autocomplete="off" required>
 			</div>
 			<div class="form-group">
 				<label class="control-label">Department</label>
 				<input type="text" name="ttr_dept" class="form-control input-sm" autocomplete="off" required>
+			</div>
+			<div class="form-group">
+				<label class="control-label">Email</label>
+				<input type="email" name="email" class="form-control input-sm" autocomplete="off" required>
+			</div>
+			<div class="form-group">
+				<label class="control-label">Password</label>
+				<input type="password" name="password" class="form-control input-sm" autocomplete="off" required>
 			</div>
 			<div class="form-group">
 				

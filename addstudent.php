@@ -4,7 +4,8 @@
  $std_dept = $_POST['std_dept'];
  $std_no = $_POST['std_no'];
  $std_class = $_POST['std_class'];
+ $email = $_POST['email'];
+ $password = $_POST['password'];
  $date = date('Y-m-d');
- $project_id = $_POST['project_id'];
 
- $query = $db->query("INSERT INTO student(name,department,level,matric,date,project_id)VALUES('$std_name','$std_dept','$std_class','$std_no','$date','$project_id')");
+ $query = $db->query("INSERT INTO student(name,department,level,matric,date,email,password)VALUES('$std_name','$std_dept','$std_class','$std_no','$date','$email','$password')");

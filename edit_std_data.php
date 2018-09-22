@@ -11,6 +11,7 @@ if(isset($_GET['id']) AND !empty($_GET['id'])){
       $level = $r->level;
       $department = $r->department;
       $matric = $r->matric;
+      $email = $r->email;
       $id = $r->id;
     }
 }else{

@@ -8,6 +8,8 @@ if(isset($_GET['id']) AND !empty($_GET['id'])){
     $row = $query->fetchAll(PDO::FETCH_OBJ);
     foreach($row as $r){
       $project_name = $r->project_name;
+      $unit_code = $r->unit_code;
+			$faculty = $r->faculty;
       $project_level = $r->project_level;
     }
 }else{

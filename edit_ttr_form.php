@@ -2,16 +2,20 @@
 	<div class="col-md-4">
 		<form method="post" action="" id="login_form1">
 			<div class="form-group">
-				<label class="control-label">Tutors' Name</label>
+				<label class="control-label">Name</label>
 				<input type="text" name="ttr_name" value="<?php echo $name ?>" class="form-control input-sm" required>
 			</div>
 			<div class="form-group">
-				<label class="control-label">Tutors' Reg. No</label>
+				<label class="control-label">Number</label>
 				<input type="text" name="ttr_no" value="<?php echo $matric; ?>" class="form-control input-sm" required>
 			</div>
 			<div class="form-group">
 				<label class="control-label">Department</label>
 				<input type="text" name="ttr_dept" value="<?php echo $department; ?>" class="form-control input-sm" required>
+			</div>
+			<div class="form-group">
+				<label class="control-label">Email</label>
+				<input type="email" name="email" value="<?php echo $email; ?>" class="form-control input-sm" autocomplete="off" required>
 			</div>
             <input type="hidden" name="ttr_id" value="<?php echo $id; ?>">
 			<button type="submit" class="btn btn-sm btn-success">Submit</button>

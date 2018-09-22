@@ -10,6 +10,7 @@ if(isset($_GET['id']) AND !empty($_GET['id'])){
       $name = $r->name;
       $department = $r->department;
       $matric = $r->matric;
+      $email = $r->email;
       $id = $r->id;
     }
 }else{

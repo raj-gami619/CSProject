@@ -6,7 +6,15 @@
 				<input type="text" name="project_name" value="<?php echo $project_name; ?>" class="form-control input-sm" required>
 			</div>
 			<div class="form-group">
-				<label class="control-label">Level</label>
+				<label class="control-label">Unit Code</label>
+				<input type="text" name="unit_code" class="form-control input-sm" required>
+			</div>
+			<div class="form-group">
+				<label class="control-label">Faculty</label>
+				<input type="text" name="faculty" class="form-control input-sm" required>
+			</div>
+			<div class="form-group">
+				<label class="control-label">Unit Level</label>
 				<select name="project_level" class="form-control input-sm " required>
 				  <option value="<?php echo $project_level; ?>" selected><?php echo $project_level; ?></option>
 				  <option value="Year 1">Year 1</option>
