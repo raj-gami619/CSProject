@@ -16,7 +16,7 @@
 </div>
 
 <div class="well">
-	<label><a href="password.php">Forgot Password ?</a></label>
+	<label><a href="../password.php">Forgot Password ?</a></label>
 </div>
 
 <script>

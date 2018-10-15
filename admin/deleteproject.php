@@ -1,5 +1,5 @@
 <?php
- require 'init.php';
+ require '../common/init.php';
 if(isset($_GET['id']) AND !empty($_GET['id'])){
 	$id = $_GET['id'];
 

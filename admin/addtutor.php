@@ -1,5 +1,5 @@
 <?php
- require 'init.php';
+ require '../common/init.php';
  $id="";
  $ttr_name = "";
  $ttr_dept = "";

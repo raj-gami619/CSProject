@@ -1,5 +1,5 @@
 <?php
- require 'init.php';
+ require '../common/init.php';
  $project_name = $_POST['project_name'];
  $project_level = $_POST['project_level'];
  $project_id = $_POST['project_id'];

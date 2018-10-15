@@ -1,5 +1,5 @@
 <?php
- require 'init.php';
+ require '../common/init.php';
  $std_name = $_POST['std_name'];
  $std_dept = $_POST['std_dept'];
  $std_no = $_POST['std_no'];

@@ -22,7 +22,7 @@
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="logout.php"><span class="fa fa-user-circle"></span> Logout[<?php echo $_SESSION['user']; ?>]</a></li>
+        <li><a href="../common/logout.php"><span class="fa fa-user-circle"></span> Logout[<?php echo $_SESSION['user']; ?>]</a></li>
       </ul>
     </div>
   </div>

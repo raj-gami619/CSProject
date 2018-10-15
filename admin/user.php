@@ -1,5 +1,5 @@
-<?php require 'init.php'; ?>
-<?php include 'head.php'; ?>
+<?php require '../common/init.php'; ?>
+<?php include '../common/head.php'; ?>
 <body>
 <?php include 'dashboard_navbar.php'; ?>
 <h3>Add User</h3>
@@ -67,4 +67,4 @@
 </table>
     </div>
 </div>
-<?php include 'footer.php'; ?>
+<?php include '../common/footer.php'; ?>

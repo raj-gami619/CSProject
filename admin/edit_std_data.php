@@ -1,5 +1,5 @@
-<?php require 'init.php'; ?>
-<?php include 'head.php'; ?>
+<?php require '../common/init.php'; ?>
+<?php include '../common/head.php'; ?>
 <?php
 if(isset($_GET['id']) AND !empty($_GET['id'])){
     $id = $_GET['id'];
@@ -23,4 +23,4 @@ if(isset($_GET['id']) AND !empty($_GET['id'])){
 <?php include 'dashboard_navbar.php'; ?>
 <h3>Edit Students' Project</h3>
 <?php include 'edit_std_form.php'; ?>
-<?php include 'footer.php'; ?>
+<?php include '../common/footer.php'; ?>

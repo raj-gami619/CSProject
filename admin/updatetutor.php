@@ -1,5 +1,5 @@
 <?php
- require 'init.php';
+ require '../common/init.php';
  $ttr_name = $_POST['ttr_name'];
  $ttr_dept = $_POST['ttr_dept'];
  $ttr_no = $_POST['ttr_no'];

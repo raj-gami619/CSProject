@@ -1,5 +1,5 @@
 <?php
-    require 'init.php';
+    require '../common/init.php';
 	$username = $_POST['username'];
 	$password = $_POST['password'];
 

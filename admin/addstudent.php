@@ -1,5 +1,5 @@
 <?php
- require 'init.php';
+ require '../common/init.php';
  
  $std_name = "";
  $std_dept = "";

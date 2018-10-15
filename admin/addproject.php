@@ -1,5 +1,5 @@
 <?php
- require 'init.php';
+ require '../common/init.php';
  $project_name="";
  $project_level="";
  $unit_code="";
